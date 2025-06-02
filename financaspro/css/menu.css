@@ -1,0 +1,178 @@
+/* Modo Claro */
+body.claro {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+body.claro .container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+body.claro .navbar,
+body.claro .bg-body-tertiary {
+  background-color: #f8f9fa !important;
+  color: #333;
+  padding-top: 0;
+}
+
+body.claro .navbar-nav .nav-link {
+  color: #333;
+}
+
+body.claro .navbar-nav .nav-link:hover {
+  color: darkgray;
+}
+
+body.claro .navbar-toggler {
+  border-color: #333;
+}
+
+body.claro .navbar-toggler-icon {
+  background-color: #f2f2f2;
+}
+
+body.claro .toggle-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body.claro .switch .icon {
+  color: #fff;
+}
+
+body.claro .switch .slider {
+  background-color: #fff;
+}
+
+body.claro a.navbar-brand.me-4 {
+  margin: 0;
+  padding: 0;
+  text-decoration: unset;
+}
+
+body.claro a {
+  text-decoration: unset;
+}
+
+/* Modo Escuro */
+body.escuro {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.escuro .container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+body.escuro .navbar,
+body.escuro .bg- body-tertiary {
+  background-color: #000000 !important;
+  color: #ffffff;
+  padding-top: 0;
+}
+
+body.escuro .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+body.escuro .navbar-nav .nav-link:hover {
+  color: #cccccc;
+}
+
+body.escuro .navbar-toggler {
+  border-color: #ffffff;
+}
+
+body.escuro .navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+body.escuro .toggle-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body.escuro .switch .icon {
+  color: #000;
+}
+
+body.escuro .switch .slider {
+  background-color: #000;
+}
+
+body.escuro a.navbar-brand.me-4 {
+  margin: 0;
+  padding: 0;
+  text-decoration: unset;
+  padding-bottom: 5px;
+}
+
+body.escuro a {
+  text-decoration: unset;
+}
+
+/* Comum aos dois modos */
+.logo-financaspro {
+  height: auto;
+  width: 50%;
+  object-fit: contain;
+}
+
+body .switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+body .switch .icon {
+  font-size: 16px;
+  z-index: 2;
+}
+
+body .switch .slider {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+body .toggle-container input[type="checkbox"] {
+  display: none;
+}
+
+body .toggle-container input[type="checkbox"]:checked + .switch .slider {
+  transform: translateX(30px);
+}
+
+/* Centralizar os itens do menu */
+body .collapse.navbar-collapse.justify-content-center.flex-grow-1 {
+  justify-content: left !important;
+  flex-grow: 1;
+  display: flex;
+  padding-left: 15.8%;
+}
+body .collapse.navbar-collapse {
+  justify-content: left !important;
+  flex-grow: 1;
+  display: flex;
+  padding-left: 10%;
+}

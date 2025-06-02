@@ -1,0 +1,287 @@
+/* Estilo global */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+h1 {
+    color:black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Saldo */
+.saldo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.saldo-container h1 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.saldo-container .saldo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.saldo-container .btn {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Botão Criar Transação */
+#botaoAbrir {
+    background: gray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+#botaoAbrir:hover {
+    background: gray;
+}
+
+/* Formulário de entrada */
+#formulario {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    display: none;
+}
+
+#formulario input, #formulario select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Tabela de histórico de transações */
+#historico {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#historico table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#historico th, #historico td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#historico th {
+    background: black;
+    color: white;
+}
+
+/* Atividade recente */
+.recent-activity {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.recent-activity h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.recent-activity table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-activity th, .recent-activity td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activity th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.recent-activity td.amount {
+    color: red;
+    font-weight: bold;
+}
+
+/* Gráfico */
+.grafico-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grafico-container h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo global em modo escuro */
+body.escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Cabeçalho */
+body.escuro h1 {
+    color: #ffffff;
+}
+
+/* Saldo */
+body.escuro .saldo-container {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.escuro .saldo-container h1,
+body.escuro .saldo-container .saldo {
+    color: #ffffff;
+}
+
+body.escuro .saldo-container .btn {
+    background-color: #444;
+    color: white;
+}
+
+/* Botão Criar Transação */
+body.escuro #botaoAbrir {
+    background: #444;
+    color: white;
+}
+
+body.escuro #botaoAbrir:hover {
+    background: #666;
+}
+
+/* Formulário de entrada */
+body.escuro #formulario {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.escuro #formulario input,
+body.escuro #formulario select {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.escuro #formulario button {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Colunas Crédito e Débito */
+body.escuro .coluna {
+    background: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* Histórico de transações */
+body.escuro #historico {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+body.escuro #historico th {
+    background: #333;
+    color: #fff;
+}
+
+body.escuro #historico td {
+    border-color: #444;
+}
+
+/* Atividade recente */
+body.escuro .recent-activity {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.escuro .recent-activity h2 {
+    color: #ffffff;
+}
+
+body.escuro .recent-activity th {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+body.escuro .recent-activity td {
+    border-bottom: 1px solid #444;
+    color: #e0e0e0;
+}
+
+body.escuro .recent-activity td.amount {
+    color: #ff6666;
+}
+
+/* Gráfico */
+body.escuro .grafico-container {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.escuro .grafico-container h2 {
+    color: #ffffff;
+}

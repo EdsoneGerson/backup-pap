@@ -1,0 +1,103 @@
+/*Eslização do titulo*/
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+/* Estilização geral */
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove margens padrão */
+    flex-direction: column; /* Garante que o título e outros elementos fiquem empilhados */
+}
+body.claro .bg-body-tertiary {
+    background-color: #ffffff !important;
+    color: #333;
+    width: 19%;
+}
+
+/* Estilização do formulário */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Centraliza o formulário na tela */
+}
+
+/* Campos de entrada */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+/* Botão de login */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    transition: background 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    flex-direction: column; /* Garante que os elementos fiquem empilhados */
+}
+
+input[type="number"] {
+    border: 2px solid #ccc;
+}
+
+/* Modo escuro */
+body.escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.escuro .bg-body-tertiary {
+    background-color: #f8f9fa !important;
+    color: #333;
+    width: 19%;
+}
+
+/* Título */
+body.escuro h1 {
+    color: #ffffff;
+}
+
+/* Formulário */
+body.escuro form {
+    background-color: #1e1e1e;
+    border: 1px solid #ffffff;
+}
+
+/* Inputs */
+body.escuro .form-control,
+body.escuro input[type="number"] {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+
+/* Botão primário */
+body.escuro .btn-primary {
+    background-color: #444;
+    color: #ffffff;
+}
+
+body.escuro .btn-primary:hover {
+    background-color: #000;
+}
+

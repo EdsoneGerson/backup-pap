@@ -1,0 +1,60 @@
+    body {
+    font-family: Arial, sans-serif;
+    }
+
+    .container {
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    box-shadow: #aaa;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center;
+    }
+
+    button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #aaa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .container button a {
+    text-decoration: none;
+    color: inherit;
+    }
+
+    button:hover {
+    background-color: #aaa;
+    }
+
+    body.escuro {
+    background-color: #121212;
+    color: #e0e0e0;
+    }
+
+body.escuro .container {
+    background-color: #000;
+    border-color: #000;
+    box-shadow: 0 0 2px #fff;
+    color: #ffffff;
+}
+
+    body.escuro button {
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    body.escuro button:hover {
+    background-color: #555;
+    }
+
+    body.escuro .container button a {
+    color: inherit;
+    }
